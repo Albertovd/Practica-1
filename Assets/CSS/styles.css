@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@ ul.contactos {
     max-width: 480px;
 }
 
-ul.contactos > li > a {
+ul.contactos>li>a {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,10 +28,10 @@ a {
     text-decoration: none;
 }
 
-ul.contactos > li {
+ul.contactos>li {
     background-color: #fffa;
     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);    
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
     border-radius: 10em;
     padding: 1em;
     margin: 1.4em 0;
@@ -55,6 +55,7 @@ img.cantantes {
     height: 300px;
     border-radius: 50%;
     margin-right: 50px;
+    z-index: auto;
 }
 
 ul.cantantes {
@@ -67,30 +68,43 @@ ul.cantantes {
     margin: 0 auto;
 }
 
-.cantantes a:hover{
+.cantantes a:hover {
     filter: blur(3px);
-    
-    
+    position: relative;
 }
 
 .link-with-image {
     position: relative;
-  }
-  
-  .link-with-image::after {
+}
+
+.link-with-image::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px; /* Ajusta el ancho y alto según tus necesidades */
-    height: 200px;
-    background-image: url("../img/play-svgrepo-com.svg"); /* Ruta de la imagen que deseas mostrar */
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/play-svgrepo-com.svg");
     background-size: cover;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Agrega una transición suave para una animación más agradable */
-  }
-  
-  .link-with-image:hover::after {
+    transition: opacity 0.3s ease;
+}
+
+.link-with-image:hover::after {
     opacity: 1;
-  }
-  
+}
+
+.play {
+    width: 120px;
+    height: 120px;
+    display: none;
+    filter: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.play:hover {
+    display: flex;
+    z-index: 2;
+
+}
