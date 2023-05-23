@@ -85,7 +85,7 @@ button{
 
 button:hover{
     transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-    transition: ease 0.7s;
+    transition: ease 0.2s;
 
 }
 
