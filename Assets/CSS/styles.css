@@ -42,7 +42,7 @@ ul.contactos>li {
 
 
 h3 {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
     font-weight: 650;
     text-align: center;
@@ -71,7 +71,7 @@ ul.cantantes {
 button{
     border-radius: 100px;
     text-align: center;
-    padding: 5px;
+    padding: 100px;
     background-color: #fffa;
     border: none;
     font-size: 20px;
@@ -79,10 +79,13 @@ button{
     font-weight: 200;
     cursor: pointer;
     margin-top: 15px;
-    margin-left: 73px;
+    margin-left: 85px;
+
 }
 
 button:hover{
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+    transition: ease 0.7s;
 
 }
 
@@ -101,3 +104,9 @@ button:hover{
     z-index: 2;
 
 }
+
+.card:hover{
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+    transition: ease 0.3s;
+}
+
